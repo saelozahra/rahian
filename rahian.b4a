@@ -1,0 +1,796 @@
+﻿Build1=yazahra,ir.saelozahra.rahpouyan.rahian,Rahian_Noor
+File1=about.txt
+File10=db.db
+File11=deldade.bal
+File12=deldadegi.png
+File13=deldadegi_p.png
+File14=doa.bal
+File15=doa_ziarat.png
+File16=doa_ziarat_p.png
+File17=gallery.bal
+File18=gallery_sorkh.png
+File19=gallery_sorkh_p.png
+File2=agha shro.mp3
+File20=hadis.html
+File21=hamsafar.png
+File22=hamsafar-intro.jpg
+File23=header.jpg
+File24=hedieh-be-shahid.png
+File25=hedieh-be-shahid_p.png
+File26=ic_action_navigation_arrow_back.png
+File27=kadr.png
+File28=leftMenu.bal
+File29=list.png
+File3=ahkam_safar.png
+File30=main.bal
+File31=main_btn.bal
+File32=menu.png
+File33=mj_two.ttf
+File34=modafean_harim.png
+File35=modafean_harim_p.png
+File36=music.mp3
+File37=note.png
+File38=notification.bal
+File39=one.html
+File4=ahkam_safar_p.png
+File40=orange.css
+File41=safar_be_manategh.png
+File42=safar_be_manategh_p.png
+File43=salavat.bal
+File44=salert.mp3
+File45=Shabnam-Light-FD.ttf
+File46=shahid_kist.png
+File47=shahid_kist_p.png
+File48=slider.jpg
+File49=slider1.jpg
+File5=asar.png
+File50=slider2.jpg
+File51=sp.png
+File52=Tanha.ttf
+File53=two.html
+File54=zendegi_sabk_shahid.png
+File55=zendegi_sabk_shahid_p.png
+File6=asar-click.png
+File7=bg_panel.jpg
+File8=cat.bal
+File9=content.bal
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Default Group
+FileGroup20=Default Group
+FileGroup21=Default Group
+FileGroup22=Default Group
+FileGroup23=Default Group
+FileGroup24=Default Group
+FileGroup25=Default Group
+FileGroup26=Default Group
+FileGroup27=Default Group
+FileGroup28=Default Group
+FileGroup29=Default Group
+FileGroup3=Default Group
+FileGroup30=Default Group
+FileGroup31=Default Group
+FileGroup32=Default Group
+FileGroup33=Default Group
+FileGroup34=Default Group
+FileGroup35=Default Group
+FileGroup36=Default Group
+FileGroup37=Default Group
+FileGroup38=Default Group
+FileGroup39=Default Group
+FileGroup4=Default Group
+FileGroup40=Default Group
+FileGroup41=Default Group
+FileGroup42=Default Group
+FileGroup43=Default Group
+FileGroup44=Default Group
+FileGroup45=Default Group
+FileGroup46=Default Group
+FileGroup47=Default Group
+FileGroup48=Default Group
+FileGroup49=Default Group
+FileGroup5=Default Group
+FileGroup50=Default Group
+FileGroup51=Default Group
+FileGroup52=Default Group
+FileGroup53=Default Group
+FileGroup54=Default Group
+FileGroup55=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+Library1=core
+Library10=xmllayoutbuilder
+Library11=threading
+Library12=ahviewpager
+Library13=appcompat
+Library14=httputils2
+Library15=floatingactionbutton
+Library16=dialogs
+Library17=audio
+Library18=javaobject
+Library19=firebasenotifications
+Library2=richstring
+Library20=xui
+Library21=firebaseanalytics
+Library22=materialtoast
+Library23=notificationbuilder
+Library24=viewsex
+Library3=sql
+Library4=doubletaptoclose
+Library5=reflection
+Library6=sharemyapp
+Library7=rippleeffect
+Library8=phone
+Library9=pageturnview
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.basic4ppc.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="29"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~~\n~SetApplicationAttribute(android:theme, "@style/MyAppTheme")~\n~'SetApplicationAttribute(android:theme, "@style/Theme.AppCompat")~\n~~\n~SetActivityAttribute(Notification, android:noHistory, "true")~\n~~\n~AddPermission(android.permission.group.STORAGE)~\n~~\n~~\n~~\n~~\n~~\n~~\n~~\n~CreateResource(values, theme.xml,~\n~<resources>~\n~    <style name="MyAppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">~\n~        <item name="colorPrimary">#014D7F</item>~\n~        <item name="colorPrimaryDark">#014D7F</item>~\n~        <item name="colorAccent">#fff</item>~\n~        <item name="android:textColorPrimary">#fff</item>~\n~        <item name="android:divider">#B1BEC8</item>~\n~        <item name="color">#999</item>~\n~        <item name="toolbarStyle">@style/Widget.Toolbar</item>~\n~		~\n~    </style>~\n~~\n~    <style name="Widget.Toolbar" parent="@style/Widget.AppCompat.Toolbar">~\n~        <item name="contentInsetStart">1dp</item>~\n~        <item name="android:contentInsetStart">1dp</item>~\n~    </style>~\n~~\n~~\n~</resources>~\n~)~\n~~\n~~\n~'		<item name="android:windowTranslucentNavigation">false</item>~\n~'     	<item name="android:windowTranslucentStatus">true</item>~\n~~\n~'************ Google Play Services Base ************~\n~AddApplicationText(~\n~   <activity android:name="com.google.android.gms.common.api.GoogleApiActivity"~\n~  android:theme="@android:style/Theme.Translucent.NoTitleBar"~\n~  android:exported="false"/>~\n~    <meta-data~\n~  android:name="com.google.android.gms.version"~\n~  android:value="@integer/google_play_services_version" />~\n~)~\n~'************ Google Play Services Base (end) ************~\n~'************ Firebase Base ************~\n~CreateResourceFromFile("google-services", "google-services.json")~\n~AddPermission(android.permission.ACCESS_NETWORK_STATE)~\n~AddPermission(android.permission.INTERNET)~\n~AddPermission(android.permission.WAKE_LOCK)~\n~AddPermission(com.google.android.c2dm.permission.RECEIVE)~\n~AddPermission(${applicationId}.permission.C2D_MESSAGE)~\n~AddManifestText( <permission android:name="${applicationId}.permission.C2D_MESSAGE"~\n~  android:protectionLevel="signature" />)~\n~AddApplicationText(~\n~<receiver~\n~  android:name="com.google.android.gms.measurement.AppMeasurementReceiver"~\n~  android:enabled="true">~\n~  <intent-filter>~\n~  <action android:name="com.google.android.gms.measurement.UPLOAD"/>~\n~  </intent-filter>~\n~  </receiver>~\n~~\n~  <service~\n~  android:name="com.google.android.gms.measurement.AppMeasurementService"~\n~  android:enabled="true"~\n~  android:exported="false"/>~\n~   <provider~\n~  android:authorities="${applicationId}.firebaseinitprovider"~\n~  android:name="com.google.firebase.provider.FirebaseInitProvider"~\n~  android:exported="false"~\n~  android:initOrder="100" />~\n~    <receiver~\n~  android:name="com.google.android.gms.measurement.AppMeasurementReceiver"~\n~  android:enabled="true">~\n~  <intent-filter>~\n~  <action android:name="com.google.android.gms.measurement.UPLOAD"/>~\n~  </intent-filter>~\n~  </receiver>~\n~~\n~  <service~\n~  android:name="com.google.android.gms.measurement.AppMeasurementService"~\n~  android:enabled="true"~\n~  android:exported="false"/>~\n~   <receiver~\n~  android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"~\n~  android:exported="true"~\n~  android:permission="com.google.android.c2dm.permission.SEND" >~\n~  <intent-filter>~\n~  <action android:name="com.google.android.c2dm.intent.RECEIVE" />~\n~  <action android:name="com.google.android.c2dm.intent.REGISTRATION" />~\n~  <category android:name="${applicationId}" />~\n~  </intent-filter>~\n~  </receiver>~\n~    <receiver~\n~  android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"~\n~  android:exported="false" />~\n~~\n~~\n~  <service~\n~  android:name="com.google.firebase.iid.FirebaseInstanceIdService"~\n~  android:exported="true">~\n~  <intent-filter android:priority="-500">~\n~  <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />~\n~  </intent-filter>~\n~  </service>~\n~)~\n~'************ Firebase Base (end) ************~\n~'************ Firebase Notifications ************~\n~AddApplicationText(~\n~    <service~\n~  android:name="com.google.firebase.messaging.FirebaseMessagingService"~\n~  android:exported="true">~\n~  <intent-filter android:priority="-500">~\n~  <action android:name="com.google.firebase.MESSAGING_EVENT" />~\n~  </intent-filter>~\n~  </service>~\n~   <service android:name="anywheresoftware.b4a.objects.FirebaseNotificationsService">~\n~     <intent-filter>~\n~  <action android:name="com.google.firebase.MESSAGING_EVENT"/>~\n~     </intent-filter>~\n~   </service>~\n~)~\n~'************ Firebase Notifications (end)************~\n~~\n~'************ Firebase Analytics ************~\n~AddApplicationText(~\n~  <receiver~\n~  android:name="com.google.android.gms.measurement.AppMeasurementReceiver"~\n~  android:enabled="true">~\n~  <intent-filter>~\n~  <action android:name="com.google.android.gms.measurement.UPLOAD"/>~\n~  </intent-filter>~\n~  </receiver>~\n~~\n~  <service~\n~  android:name="com.google.android.gms.measurement.AppMeasurementService"~\n~  android:enabled="true"~\n~  android:exported="false"/>~\n~~\n~  <service android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"~\n~  android:process=":background_crash"/>~\n~~\n~  <service android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"~\n~  android:process=":background_crash"/>~\n~)~\n~'************ Firebase Analytics (end) ************
+Module1=about
+Module10=notification
+Module11=salavat_shomar
+Module12=Shake
+Module13=Starter
+Module14=timerMod
+Module2=B4XDrawer
+Module3=cat
+Module4=content_old
+Module5=deldadegi
+Module6=doa
+Module7=FirebaseMessaging
+Module8=gallery
+Module9=library
+NumberOfFiles=55
+NumberOfLibraries=24
+NumberOfModules=14
+Version=9.8
+@EndOfDesignText@
+
+#Region  Project Attributes 
+	#ApplicationLabel: همسفر تا بهشت
+	#VersionCode: 7
+	#VersionName: before_safare_jonoobe_98 
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: portrait
+	#CanInstallToExternalStorage: true
+#End Region
+
+#Region  Activity Attributes
+	#FullScreen: false
+	#IncludeTitle: false
+#End Region
+
+Sub Process_Globals
+	Dim intro_timer As Timer
+	Dim sql1 As SQL
+	Dim cu1 As Cursor
+	Public new_version As Boolean = False
+	Dim share As Intent
+	Public media As MediaPlayer
+	
+		
+	#AdditionalRes: ..\resource
+	#AdditionalRes: ..\resMaterialToast
+'	#AdditionalRes: J:\Development\sdk\my_resource\b4a_appcompat, de.amberhome.objects.appcompat
+''	#AdditionalRes: D:\sdk\extras\android\support\v7\appcompat\res, android.support.v7.appcompat
+''	#AdditionalRes: D:\sdk\extras\android\support\v7\cardview\res
+'	#AdditionalRes: j:\Development\sdk\my_resource\b4a_floatingactionbutton, de.amberhome.objects.floatingactionbutton
+'	#AdditionalRes: j:\Development\sdk\my_resource\md-app-en\res
+'	#AdditionalRes: j:\Development\sdk\my_resource\md-lib-en\res
+'	#Extends: android.support.v7.app.ActionBarActivity
+
+
+	#IgnoreWarnings: 15,12
+	#AdditionalRes: j:\Development\sdk\my_resource\b4a_floatingactionbutton, de.amberhome.objects.floatingactionbutton
+	#CustomBuildAction: 1, c:\windows\system32\attrib.exe, +r res\*.* /s
+	#AdditionalJar: com.google.android.gms:play-services-base
+	#AdditionalJar: com.google.android.gms:play-services-maps
+	#AdditionalJar: com.google.firebase:firebase-core
+	'#additionaljar: com.android.support:support-v4
+	'#Extends: android.support.v7.app.AppCompatActivity
+	#Extends: androidx.appcompat.app.AppCompatActivity
+End Sub
+
+Sub Globals
+	Dim Drawer As B4XDrawer
+	Dim intro_panel As Panel
+	Dim intro_count As Int = 0
+'	Dim rp As RuntimePermissions
+	Dim web As PhoneIntents
+	Dim d As DoubleTaptoClose
+	Dim shareapp As ShareMyApp
+	Dim r As Reflector
+	Public ripple As RippleView
+	
+	
+	Private slider As WebView
+	Private body As ScrollView
+	Dim hadis As WebView
+
+	Private btn_lifestyle As Button
+	Private btn_doa As Button
+	Private btn_deldade As Button
+	Private btn_hedie As Button
+	Private btn_gallery As Button
+	Private btn_ahkam As Button
+	Private btn_sire As Button
+	Private btn_shahid As Button
+	Private btn_safar As Button
+	
+'	Dim MDB As MSMaterialDrawerBuilder
+'	Dim MD As MSMaterialDrawer
+	Dim AC As AppCompat
+	Dim xml1 As XmlLayoutBuilder
+'	Dim playSound As Boolean
+	Private ActionBar As ACToolBarLight
+	
+	Private ListView1 As ListView
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	
+	
+	Log("Activity_Create")
+	
+	library.color = AC.GetThemeAttribute("colorPrimary")
+	library.colorDark = AC.GetThemeAttribute("colorPrimaryDark")
+	library.colorLight = AC.GetThemeAttribute("android:divider")
+		
+'	rp.CheckAndRequest(rp.PERMISSION_WRITE_EXTERNAL_STORAGE)
+'	rp.CheckAndRequest(rp.PERMISSION_READ_EXTERNAL_STORAGE)
+		
+	BuildB4XDrawer
+'	Activity.LoadLayout("main")
+	
+	
+	intro
+	
+	D.Initialize ("لطفا کلید بازگشت را مجددا فشار دهید.")
+	
+	body.Panel.LoadLayout("main_btn")
+	
+	
+	
+	
+	sql_start
+	
+
+	File.Copy(File.DirAssets,"slider.jpg",library.dir,"slider.jpg")
+	File.Copy(File.DirAssets,"slider1.jpg",library.dir,"slider1.jpg")
+	File.Copy(File.DirAssets,"slider2.jpg",library.dir,"slider2.jpg")
+	slider.Color=Colors.Transparent
+	slider.LoadHtml(File.ReadString(File.DirAssets,"one.html") & " <div class='item'><img src='"&File.Combine(library.dir,"slider.jpg")&"'></div><div class='item'><img src='"&File.Combine(library.dir,"slider1.jpg")&"'></div><div class='item'><img src='"&File.Combine(library.dir,"slider2.jpg")&"'></div>" & File.ReadString(File.DirAssets,"two.html") & "<Style>img{width:100%;float:right;}</style>")
+	
+				
+	hadis.Initialize("hadis")
+	hadis.Color=Colors.Transparent
+	hadis.ZoomEnabled=False
+	hadis.LoadHtml( File.ReadString(File.DirAssets,"hadis.html") )
+	
+	
+	
+	media.Initialize()
+	media.Load(File.DirAssets,"music.mp3")
+	
+
+
+	
+	If File.Exists(library.dir,"sound")==False Then
+		File.WriteString(library.dir,"sound",1)
+	End If
+	
+	If File.ReadString(library.dir,"sound")=="1" Then
+'		playSound=True
+		media.SetVolume(0.4,0.4)
+	Else
+'		playSound=False
+		media.SetVolume(0.001,0.001)
+	End If
+	
+
+	
+	
+	ActionBar.SetLayoutAnimated(200, 0, 0, 100%x, AC.GetMaterialActionBarHeight)
+	slider.SetLayoutAnimated(200, 0, AC.GetMaterialActionBarHeight, 100%x, 43%y-AC.GetMaterialActionBarHeight)
+	
+	body.SetLayoutAnimated(200, 0, 43%y, 100%x, 56%y)
+	body.Panel.Height=btn_doa.Height + btn_doa.Top + 5dip
+	
+	ActionBar.SetVisibleAnimated(200, True)
+	AC.SetElevation(ActionBar,8dip)
+	
+	ActionBar.AddView(hadis,88%x,AC.GetMaterialActionBarHeight,Gravity.RIGHT)
+	
+	ActionBar.Color=library.colorDark
+	
+	
+'	StartService(FirebaseMessaging)
+	
+End Sub
+
+
+
+'Sub Activity_PermissionResult (Permission As String, Result As Boolean)
+'
+'	Log($"Permission: ${Permission} Result: ${Result}"$)
+'	If Permission="android.permission.WRITE_SETTINGS" Then
+'		'	If rp.Check(rp.PERMISSION_WRITE_EXTERNAL_STORAGE) Then
+'		File.Copy(File.DirAssets,"slider.jpg",library.dir,"slider.jpg")
+'		File.Copy(File.DirAssets,"slider1.jpg",library.dir,"slider1.jpg")
+'		File.Copy(File.DirAssets,"slider2.jpg",library.dir,"slider2.jpg")
+'		
+'		'	Else
+'		'		Msgbox2("تا زمانی که اجازه دسترسی به نوشتن در بانک اطلاعاتی ندهید نمیتوانید برنامه را باز کنید","سطح دسترسی برنامه","خُب","","",Null)
+'		'		rp.CheckAndRequest(rp.PERMISSION_WRITE_EXTERNAL_STORAGE)
+'		'		rp.CheckAndRequest(rp.PERMISSION_READ_EXTERNAL_STORAGE)
+'		'	End If
+'		
+'		slider.Color=Colors.Transparent
+'		slider.LoadHtml(File.ReadString(File.DirAssets,"one.html") & " <div class='item'><img src='"&File.Combine(library.dir,"slider.jpg")&"'></div><div class='item'><img src='"&File.Combine(library.dir,"slider1.jpg")&"'></div><div class='item'><img src='"&File.Combine(library.dir,"slider2.jpg")&"'></div>" & File.ReadString(File.DirAssets,"two.html") & "<Style>img{width:100%;float:right;}</style>")
+'			
+'	End If
+'	
+'End Sub
+
+
+Sub Activity_Resume
+	Log("Activity_Resume")
+	If intro_panel.Visible == False Then media.Play
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+	media.Pause
+End Sub
+
+
+
+Sub intro
+
+	Log("APP Started")
+	Dim intro_image As ImageView
+	intro_image.Initialize("intro_image")
+	intro_image.Bitmap=LoadBitmap(File.DirAssets,"hamsafar-intro.jpg")
+	intro_image.Gravity=Gravity.CENTER
+	intro_panel.Initialize("intro_panel")
+	intro_panel.AddView(intro_image,0,0,Activity.Width,Activity.Height)
+	intro_panel.Color=0xFF90B5C8
+	Activity.AddView(intro_panel,0,0,100%x,100%y)
+	intro_timer.Initialize("intro_timer",800)
+	intro_timer.Enabled=True
+
+	Dim mp_agha As MediaPlayer
+	mp_agha.Initialize
+	mp_agha.Load(File.DirAssets,"agha shro.mp3")
+	mp_agha.Looping=False
+	mp_agha.Play
+	
+	Log("Width: "&Activity.Width & "  Height: "&Activity.Height)
+	
+End Sub
+
+
+
+
+
+
+Sub sql_start
+
+	Try
+	
+		If Application.VersionCode > File.ReadString(library.dir,"VAPP") Then
+			new_version = True
+		End If 
+
+		
+	Catch
+		
+		File.WriteString(library.dir,"VAPP",Application.VersionCode)
+
+	End Try
+	
+	File.WriteString(library.dir,"VAPP",Application.VersionCode)
+		
+	Try
+		
+		If new_version = True Then
+			File.Copy(File.DirAssets,"db.db",library.dir,"db.db")
+		End If
+		
+		If File.Exists(library.dir,"db.db") = False Then
+			File.Copy(File.DirAssets,"db.db",library.dir,"db.db")
+		End If
+	Catch
+		Log("db created")
+		sql_start
+	End Try
+		
+	
+	If sql1.IsInitialized = False Then
+		sql1.Initialize(library.dir,"db.db",False)
+	End If
+	
+
+			
+			
+End Sub
+
+
+Sub intro_timer_Tick
+	
+	intro_count= intro_count+1
+	
+	If intro_count > 10 Then
+		intro_timer.Enabled=False
+		intro_panel.SetVisibleAnimated(300,False)
+		media.Play	
+	End If
+	
+End Sub
+
+Sub Activity_KeyPress (KeyCode As Int) As Boolean
+	
+	If KeyCode = KeyCodes.KEYCODE_BACK Then
+		D.TapToClose
+		Drawer.LeftOpen = False
+		Return True
+	
+	Else If KeyCode = KeyCodes.KEYCODE_MENU Then
+		
+		Drawer.LeftOpen = False
+		
+'		If MD.IsDrawerOpen Then
+'			MD.CloseDrawer
+'		Else
+'			MD.OpenDrawer
+'		End If
+		
+		Return True
+	Else
+		Return False
+	End If
+	
+End Sub
+
+
+
+
+
+
+
+
+
+
+Sub btn_safar_Click
+	StartActivity(cat)
+	library.selectedcat="سفر به مناطق"
+End Sub
+
+Sub btn_shahid_Click
+	StartActivity(cat)
+	library.selectedcat="شهید کیست ؟"
+End Sub
+
+Sub btn_sire_Click
+	StartActivity(cat)
+	library.selectedcat="مدافعان حرم"
+End Sub
+
+Sub btn_ahkam_Click
+	StartActivity(cat)
+	library.selectedcat="احکام و آداب"
+End Sub
+
+Sub btn_gallery_Click
+	StartActivity(gallery)
+End Sub
+
+Sub btn_hedie_Click
+	StartActivity(salavat_shomar)
+End Sub
+
+Sub btn_deldade_Click
+	StartActivity(deldadegi)
+End Sub
+
+Sub btn_doa_Click
+	StartActivity(cat)
+	library.selectedcat="ادعیه"
+End Sub
+
+Sub btn_lifestyle_Click
+	StartActivity(cat)
+	library.selectedcat="سبک زندگی"
+End Sub
+
+
+
+
+
+
+
+Sub BuildB4XDrawer
+	Drawer.Initialize(Me, "Drawer", Activity, 300dip)
+	Drawer.CenterPanel.LoadLayout("main")
+'	ToolbarHelper.Initialize
+'	ToolbarHelper.ShowUpIndicator = True 'set to true to show the up arrow
+'	Dim bd As BitmapDrawable
+'	bd.Initialize(LoadBitmap(File.DirAssets, "hamburger.png"))
+'	ToolbarHelper.UpIndicatorDrawable =  bd
+	Drawer.LeftPanel.LoadLayout("leftMenu")
+	ListView1.AddSingleLine("دعا برای پیروزی رزمنده ها")
+	ListView1.AddSingleLine("لیست علاقه مندی ها")
+	ListView1.AddSingleLine("کانال گردان شهادت")
+	ListView1.AddSingleLine("گروه انفاق شهید غلام موسوی")
+	ListView1.AddSingleLine("سفر جنوب در جامعه مجازی")
+	ListView1.AddSingleLine("صوت پخش شود")
+	ListView1.AddSingleLine("درباره ما")
+'	ListView1.AddSingleLine("ارسال نرم افزار")
+	ListView1.AddSingleLine("اطلاعیه")
+	ListView1.AddSingleLine("امتیاز دهی")
+	ListView1.AddSingleLine("ارتباط با ما")
+	ListView1.AddSingleLine("دیگر نرم افزار های ما")
+	ListView1.AddSingleLine(" طراحی سایت و انواع نرم افزار ")
+	ListView1.AddSingleLine("خروج")
+	
+	ListView1.SingleLineLayout.Label.Typeface=library.font_tanha
+	ListView1.SingleLineLayout.Label.TextSize=ListView1.SingleLineLayout.Label.TextSize-3
+	ListView1.SingleLineLayout.Label.Width=ListView1.SingleLineLayout.Label.Width-10dip
+	
+	ActionBar.Color=library.color
+	ActionBar.InitMenuListener
+	ActionBar.NavigationIconDrawable = xml1.GetDrawable("ic_action_image_dehaze")
+	
+	library.SetStatusBarColor(library.color)
+	
+End Sub
+
+
+
+
+'Sub BuildDrawer
+'	
+'		Try
+'			
+''		Dim MSP1 As ParsProfile
+''		Dim PDB1 As BitmapDrawable : PDB1.Initialize(LoadBitmap(File.DirAssets,"hamsafar.png"))
+''		MSP1.withEmail("@Rahpouyan_shohada").withIcon(PDB1)
+''		
+''		Dim Profiles(1) As ParsProfile
+''		Profiles(0) = MSP1
+''	
+''	
+''		Dim msa As ParsAccountHeaderBuilder
+''		Dim HeaderBackground As BitmapDrawable
+''		HeaderBackground.Initialize(LoadBitmap(File.DirAssets,"header.jpg"))
+''		msa.Initialize("MSA")
+''		msa.addProfiles(Profiles)
+''		msa.withProfile(MSP1)
+''	
+''		msa.withHeaderBackground(HeaderBackground)
+''		Dim MaterialHeaderResult As Object = msa.build
+'	
+'	
+'	
+'	
+'		MDB.Initialize("MD")
+''		MDB.withDrawerGravity(Gravity.RIGHT)
+''		MDB.withAccountHeader(MaterialHeaderResult)
+'	Catch
+'		Log("Header Error")
+'		Log(LastException)
+'	End Try
+'	Try
+'	
+'	MDB.AddPrimaryDrawerItem("دعا برای پیروزی رزمنده ها" ,library.icon("faw_heart",Colors.White).Drawable ,library.icon("faw_heart",1).Drawable ,"",True,10,"")
+'	MDB.AddPrimaryDrawerItem("لیست علاقه مندی ها" ,library.icon("gmd_star",Colors.White).Drawable ,library.icon("gmd_star",1).Drawable ,"",True,9,"")
+'	MDB.AddPrimaryDrawerItem("کانال تلگرام گردان شهادت" ,library.icon("faw_telegram",Colors.White).Drawable ,library.icon("faw_telegram",1).Drawable ,"",True,8,"")
+'	MDB.AddPrimaryDrawerItem("کانال تلگرام گروه انفاق شهید غلام موسوی" ,library.icon("faw_telegram",Colors.White).Drawable ,library.icon("faw_telegram",1).Drawable ,"",True,12,"")
+'	MDB.AddPrimaryDrawerItem("سفر جنوب در جامعه مجازی" ,library.icon("faw_link",Colors.White).Drawable ,library.icon("faw_link",1).Drawable ,"",True,13,"")
+''	MDB.AddSwitchDrawerItem("صوت پخش شود" ,library.icon("gmd_videocam",Colors.White).Drawable ,library.icon("gmd_videocam",1).Drawable ,"",True,playSound,11)
+'	
+'	MDB.AddDividerItem
+'	MDB.AddSecondaryDrawerItem("درباره ما" ,library.icon("gmd_account_circle",Colors.White).Drawable ,library.icon("gmd_account_circle",1).Drawable ,"",True,7)
+'	MDB.AddSecondaryDrawerItem("ارسال نرم افزار" ,library.icon("gmd_share",Colors.White).Drawable ,library.icon("gmd_share",1).Drawable ,"",True,6)
+'	
+'	
+'	
+'	MDB.AddSecondaryDrawerItem( "اطلاعیه" , library.icon("gmd_notifications",Colors.White).Drawable , library.icon("gmd_notifications",1).Drawable , "" , True , 5  )
+'	MDB.AddSecondaryDrawerItem("امتیاز دهی" ,library.icon("gmd_star",Colors.White).Drawable ,library.icon("gmd_star",1).Drawable ,"",True ,4)
+'	MDB.AddSecondaryDrawerItem("ارتباط با ما",library.icon("gmd_markunread",Colors.White).Drawable ,library.icon("gmd_markunread",1).Drawable ,""    ,True ,3)
+'	MDB.AddSecondaryDrawerItem("دیگر نرم افزار های ما",library.icon("faw_check",Colors.White).Drawable,Null ,""    ,True,2)
+'	MDB.AddSecondaryDrawerItem("خروج",library.icon("gmd_close",Colors.White).Drawable ,Null ,""    ,True,1)
+'	
+'	
+'	MDB.AddDividerItem
+'	MDB.AddPrimaryDrawerItem(" طراحی سایت و انواع نرم افزار ",library.icon("gmd_call",Colors.White).Drawable,library.icon("gmd_call",1).Drawable,"",True,99, "")
+' 
+'	
+'	Catch
+'		Log("Icons Error")
+'		Log(LastException)
+'	End Try
+'	
+''	Try
+'		MDB.withTransluscentStatusbar(True)
+'		MDB.withActionbarToggle(True)
+'		MDB.withActionbarToggleAnimated(True )
+'		MDB.withToolbar(ActionBar)
+'		MD = MDB.Build
+''		MDB.withTransluscentStatusbar(True)
+''	Catch
+''		Log("build error")
+''		Log(LastException)
+''	End Try
+'	
+'	Try
+'		
+''		library.SetStatusBarColor(library.colorDark)
+'
+'	
+'''		ActionBar.NavigationIconDrawable = xml1.GetDrawable("ic_action_image_dehaze")
+'		ActionBar.NavigationIconDrawable = library.icon("faw_bars",Colors.White).Drawable
+'	
+'
+''		MD.OpenDrawer
+''		MD.CloseDrawer
+'	
+'	Catch
+'		Log("end error")
+'		Log(LastException)
+'	End Try
+'	
+'End Sub
+
+'Sub MD_ItemClick(Position As Int, Identifier As Int)
+'	
+'	
+'	Select Identifier
+'		
+'		
+'		Case 1
+'			ExitApplication
+'		Case 2
+'			Try
+'			    share.Initialize(share.ACTION_VIEW,"market://collection?slug=by_author&aid=saelozahra14")
+'			    StartActivity(share)
+'			Catch
+'				ToastMessageShow( "مارکت روی سیستم شما نصب نیست" ,False)
+'				StartActivity(web.OpenBrowser("https://cafebazaar.ir/developer/saelozahra14/"))
+'			End Try
+'			
+'
+'		Case 3
+''			StartActivity(contact)
+'		Case 4
+'		
+'			Try
+'			    share.Initialize(share.ACTION_EDIT,"market://details?id="&Application.PackageName)
+'			    StartActivity(share)
+'			Catch
+'				ToastMessageShow( "مارکت روی سیستم شما نصب نیست" ,False)
+'			End Try
+'			
+'		Case 5
+'			StartActivity(notification)
+'		Case 6
+'			shareapp_click
+'		Case 7
+'			StartActivity(about)
+'		Case 8
+'			
+'			StartActivity(web.OpenBrowser(library.site_url))
+'		
+'		Case 9
+'			library.selectedcat="ویژه ها"
+'			StartActivity(cat)
+'			
+'		Case 10
+'			StartActivity(doa)
+'		Case 12			
+'			StartActivity(web.OpenBrowser("https://t.me/enfaghmosavi"))
+'		Case 13			
+'			StartActivity(web.OpenBrowser("http://rahpouyan.ir/%D8%B3%D9%81%D8%B1-%D9%87%D8%A7-147/%D8%B3%D9%81%D8%B1-%D8%B1%D8%A7%D9%87%DB%8C%D8%A7%D9%86-%D9%86%D9%88%D8%B1-95-a-9085-new/"))
+'		Case 99
+'			footer_click
+'			
+'	End Select
+'
+'End Sub
+
+Sub shareapp_click
+	shareapp.startShare( r.GetActivity , "ارسال نرم افزار به دیگران")
+End Sub
+
+'Sub msa_ProfileClicked(Profile As MSProfile)
+'	StartActivity(web.OpenBrowser(library.site_url))
+'End Sub
+
+
+'
+
+Sub footer_click
+	share.Initialize(share.ACTION_VIEW, "tel:09366208105")
+	StartActivity(share)
+End Sub
+
+
+Sub ActionBar_NavigationItemClick
+	Log("Click rooye ActionBar")
+	Drawer.LeftOpen = Not(Drawer.LeftOpen)
+End Sub
+
+
+Sub ListView1_ItemClick (Position As Int, Value As Object)
+	
+	Select Position
+		
+		
+		Case 12
+			ExitApplication
+		Case 11
+			footer_click
+		Case 10
+			Try
+				share.Initialize(share.ACTION_VIEW,"market://collection?slug=by_author&aid=saelozahra14")
+				StartActivity(share)
+			Catch
+				ToastMessageShow( "مارکت روی سیستم شما نصب نیست" ,False)
+				StartActivity(web.OpenBrowser("https://cafebazaar.ir/developer/saelozahra14/"))
+			End Try
+		Case 9
+'			StartActivity(contact)
+		Case 8
+		
+			Try
+				share.Initialize(share.ACTION_EDIT,"market://details?id="&Application.PackageName)
+				StartActivity(share)
+			Catch
+				ToastMessageShow( "مارکت روی سیستم شما نصب نیست" ,False)
+			End Try
+			
+		Case 7
+			StartActivity(notification)
+'		Case 7
+'			shareapp_click
+		Case 6
+			StartActivity(about)
+		Case 5
+			
+			If Not(File.Exists(library.dir,"sound")) Then File.WriteString(library.dir,"sound","1")
+			
+			If File.ReadString(library.dir,"sound")=="0" Then
+				media.SetVolume(0.4,0.4)
+				File.WriteString(library.dir,"sound","1")
+				ToastMessageShow("صدا زیاد شد",False)
+			Else
+				media.SetVolume(0.001,0.001)
+				File.WriteString(library.dir,"sound","0")
+				ToastMessageShow("صدا کم شد",False)
+			End If
+		Case 4
+			StartActivity(web.OpenBrowser("http://rahpouyan.ir/%D8%B3%D9%81%D8%B1-%D9%87%D8%A7-147/%D8%B3%D9%81%D8%B1-%D8%B1%D8%A7%D9%87%DB%8C%D8%A7%D9%86-%D9%86%D9%88%D8%B1-95-a-9085-new/"))
+		Case 3
+			StartActivity(web.OpenBrowser("https://t.me/enfaghmosavi"))
+		Case 2
+			StartActivity(web.OpenBrowser(library.site_url))
+		Case 1
+			library.selectedcat="ویژه ها"
+			StartActivity(cat)
+			
+		Case 0
+			StartActivity(doa)
+
+			
+		
+	End Select
+
+End Sub

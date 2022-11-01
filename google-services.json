@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "482781529762",
+    "firebase_url": "https://rahian-8ee33.firebaseio.com",
+    "project_id": "rahian-8ee33",
+    "storage_bucket": "rahian-8ee33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482781529762:android:0855fb2b79a39cd5",
+        "android_client_info": {
+          "package_name": "ir.saelozahra.rahpouyan.rahian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482781529762-d8n88vqvk2mkuao4e51j18lfi92rfjbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEK5md89SSw_JSNtXrKqG2jH1Fml-cZ_0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

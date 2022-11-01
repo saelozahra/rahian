@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="ir.saelozahra.rahpouyan.rahian"
+	android:versionCode="6"
+	android:versionName="before_safare_jonoobe_95"
+	android:installLocation="internalOnly">
+	
+	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="29"/>
+	<supports-screens android:largeScreens="true" 
+	    android:normalScreens="true" 
+	    android:smallScreens="true" 
+	    android:anyDensity="true"/>
+	<permission android:name="ir.saelozahra.rahpouyan.rahian.permission.C2D_MESSAGE"
+	  android:protectionLevel="signature" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.group.STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission android:name="ir.saelozahra.rahpouyan.rahian.permission.C2D_MESSAGE"/>
+	<application
+		android:icon="@drawable/icon"
+		android:label="همسفر تا بهشت"
+		android:theme="@style/MyAppTheme">
+		
+		<activity android:name="com.google.android.gms.common.api.GoogleApiActivity"
+		  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		  android:exported="false"/>
+		    <meta-data
+		  android:name="com.google.android.gms.version"
+		  android:value="@integer/google_play_services_version" />
+		<receiver
+		  android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+		  android:enabled="true">
+		  <intent-filter>
+		  <action android:name="com.google.android.gms.measurement.UPLOAD"/>
+		  </intent-filter>
+		  </receiver>
+		
+		  <service
+		  android:name="com.google.android.gms.measurement.AppMeasurementService"
+		  android:enabled="true"
+		  android:exported="false"/>
+		   <provider
+		  android:authorities="ir.saelozahra.rahpouyan.rahian.firebaseinitprovider"
+		  android:name="com.google.firebase.provider.FirebaseInitProvider"
+		  android:exported="false"
+		  android:initOrder="100" />
+		    <receiver
+		  android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+		  android:enabled="true">
+		  <intent-filter>
+		  <action android:name="com.google.android.gms.measurement.UPLOAD"/>
+		  </intent-filter>
+		  </receiver>
+		
+		  <service
+		  android:name="com.google.android.gms.measurement.AppMeasurementService"
+		  android:enabled="true"
+		  android:exported="false"/>
+		   <receiver
+		  android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+		  android:exported="true"
+		  android:permission="com.google.android.c2dm.permission.SEND" >
+		  <intent-filter>
+		  <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+		  <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+		  <category android:name="ir.saelozahra.rahpouyan.rahian" />
+		  </intent-filter>
+		  </receiver>
+		    <receiver
+		  android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+		  android:exported="false" />
+		
+		
+		  <service
+		  android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+		  android:exported="true">
+		  <intent-filter android:priority="-500">
+		  <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+		  </intent-filter>
+		  </service>
+		<service
+		  android:name="com.google.firebase.messaging.FirebaseMessagingService"
+		  android:exported="true">
+		  <intent-filter android:priority="-500">
+		  <action android:name="com.google.firebase.MESSAGING_EVENT" />
+		  </intent-filter>
+		  </service>
+		   <service android:name="anywheresoftware.b4a.objects.FirebaseNotificationsService">
+		     <intent-filter>
+		  <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+		     </intent-filter>
+		   </service>
+		<receiver
+		  android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+		  android:enabled="true">
+		  <intent-filter>
+		  <action android:name="com.google.android.gms.measurement.UPLOAD"/>
+		  </intent-filter>
+		  </receiver>
+		
+		  <service
+		  android:name="com.google.android.gms.measurement.AppMeasurementService"
+		  android:enabled="true"
+		  android:exported="false"/>
+		
+		  <service android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"
+		  android:process=":background_crash"/>
+		
+		  <service android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"
+		  android:process=":background_crash"/>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".main"
+			android:label="همسفر تا بهشت"
+			android:screenOrientation="portrait">
+			<intent-filter>
+			   <action android:name="android.intent.action.MAIN" />
+			   <category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			
+		</activity>
+		<service android:name=".firebasemessaging">
+		</service>
+		<receiver android:name=".firebasemessaging$firebasemessaging_BR">
+		</receiver>
+		<service android:name=".starter">
+		</service>
+		<receiver android:name=".starter$starter_BR">
+		</receiver>
+		<service android:name=".timermod">
+		</service>
+		<receiver android:name=".timermod$timermod_BR">
+			<intent-filter>
+			<action android:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".content_old"
+			android:label="همسفر تا بهشت"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".notification"
+			android:label="همسفر تا بهشت"
+			android:screenOrientation="portrait"
+			android:noHistory="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".about"
+			android:label="همسفر تا بهشت"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".cat"
+			android:label="همسفر تا بهشت"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".deldadegi"
+			android:label="همسفر تا بهشت"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".doa"
+			android:label="همسفر تا بهشت"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".gallery"
+			android:label="همسفر تا بهشت"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".salavat_shomar"
+			android:label="همسفر تا بهشت"
+			android:screenOrientation="portrait">
+		</activity>
+		<service android:name="anywheresoftware.b4a.samples.httputils2.httputils2service">
+		</service>
+		<receiver android:name="anywheresoftware.b4a.samples.httputils2.httputils2service$httputils2service_BR">
+		</receiver>
+	</application>
+</manifest>
